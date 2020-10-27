@@ -1,5 +1,5 @@
 
-package view;
+package app;
 
 import java.awt.event.KeyEvent;
 import javax.swing.JOptionPane;

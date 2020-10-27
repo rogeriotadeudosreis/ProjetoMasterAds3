@@ -1,5 +1,5 @@
 
-package utilidades;
+package util;
 import javax.swing.JOptionPane;
 
 public class Util_ProjetoID {

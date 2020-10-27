@@ -1,6 +1,6 @@
-package modelos;
+package model;
 
-import enumeradores.EnumSituacao;
+import enumerations.EnumSituacao;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 

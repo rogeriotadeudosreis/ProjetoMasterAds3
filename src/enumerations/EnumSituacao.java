@@ -1,5 +1,5 @@
 
-package enumeradores;
+package enumerations;
 
 public enum EnumSituacao {
     

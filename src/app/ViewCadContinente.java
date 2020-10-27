@@ -3,12 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package view;
+package app;
 
-import controles.ContinenteControle;
-import modelos.Continente;
-import enumeradores.EnumSituacao;
-import enumeradores.EnumArquivosTXT;
+import bll.ContinenteControle;
+import model.Continente;
+import enumerations.EnumSituacao;
+import enumerations.EnumArquivosTXT;
 import java.io.File;
 import java.io.IOException;
 import java.text.ParseException;
@@ -49,6 +49,8 @@ public class ViewCadContinente extends javax.swing.JDialog {
             String formato = "dd/MM/yyyy HH:mm:ss";
             formatar = new SimpleDateFormat(formato);
             controle = new ContinenteControle();
+            jComboBoxSituacao.removeAllItems();
+            jComboBoxSituacao.addItem("< Selecione a situação deste registro >");
             for (EnumSituacao situacao : EnumSituacao.values()) {
                 jComboBoxSituacao.addItem(situacao.toString());
             }
@@ -132,6 +134,7 @@ public class ViewCadContinente extends javax.swing.JDialog {
     private void limpaCampos() {
         jTextFieldCodigo.setText("");
         jTextFieldNome.setText("");
+        jTextFieldNome.requestFocus();
     }
 
     /**
@@ -416,7 +419,6 @@ public class ViewCadContinente extends javax.swing.JDialog {
     private void jButtonNovoCadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonNovoCadActionPerformed
         habilitarCampos();
         limpaCampos();
-        jTextFieldCodigo.requestFocus();
         jButtonSalvar.setText("Salvar");
     }//GEN-LAST:event_jButtonNovoCadActionPerformed
 

@@ -1,12 +1,12 @@
-package persistencias;
+package dal;
 
-import modelos.Continente;
+import model.Continente;
 import interfaces.ICRUDContinente;
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Collections;
-import enumeradores.EnumArquivosTXT;
-import utilidades.GeradorIdentificador;
+import enumerations.EnumArquivosTXT;
+import util.GeradorIdentificador;
 
 public class ContinentePersistencia implements ICRUDContinente {
 

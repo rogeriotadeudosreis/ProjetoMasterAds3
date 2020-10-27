@@ -1,7 +1,7 @@
 package interfaces;
 
 import java.util.ArrayList;
-import modelos.Continente;
+import model.Continente;
 
 /**
  *

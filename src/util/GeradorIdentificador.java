@@ -1,4 +1,4 @@
-package utilidades;
+package util;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -8,7 +8,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import javax.swing.JOptionPane;
-import enumeradores.EnumArquivosTXT;
+import enumerations.EnumArquivosTXT;
 
 public class GeradorIdentificador {
 
